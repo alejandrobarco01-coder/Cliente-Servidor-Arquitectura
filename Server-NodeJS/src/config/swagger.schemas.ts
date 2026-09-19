@@ -75,6 +75,22 @@
  * @openapi
  * components:
  *   schemas:
+ *     Teacher:
+ *       type: object
+ *       required: [id, name, lastName, email, department, specialty]
+ *       properties:
+ *         id: { type: integer, example: 1 }
+ *         name: { type: string, example: Laura }
+ *         lastName: { type: string, example: Gómez }
+ *         email: { type: string, format: email, example: laura.gomez@uceva.edu.co }
+ *         department: { type: string, example: Ingeniería de Sistemas }
+ *         specialty: { type: string, example: Desarrollo web }
+ */
+
+/**
+ * @openapi
+ * components:
+ *   schemas:
  *     Course:
  *       type: object
  *       required: [id, name, code, credits, semester, area]
