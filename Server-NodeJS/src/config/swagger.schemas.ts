@@ -71,4 +71,50 @@
  *           type: number
  *           example: 4500
  */
+/**
+ * @openapi
+ * components:
+ *   schemas:
+ *     Teacher:
+ *       type: object
+ *       required: [id, name, lastName, email, department, specialty]
+ *       properties:
+ *         id: { type: integer, example: 1 }
+ *         name: { type: string, example: Laura }
+ *         lastName: { type: string, example: Gómez }
+ *         email: { type: string, format: email, example: laura.gomez@uceva.edu.co }
+ *         department: { type: string, example: Ingeniería de Sistemas }
+ *         specialty: { type: string, example: Desarrollo web }
+ */
+
+/**
+ * @openapi
+ * components:
+ *   schemas:
+ *     Course:
+ *       type: object
+ *       required: [id, name, code, credits, semester, area]
+ *       properties:
+ *         id: { type: integer, example: 1 }
+ *         name: { type: string, example: Arquitectura de Software }
+ *         code: { type: string, example: ASI-401 }
+ *         credits: { type: integer, example: 3 }
+ *         semester: { type: integer, example: 7 }
+ *         area: { type: string, example: Ingeniería de software }
+ */
+/**
+ * @openapi
+ * components:
+ *   schemas:
+ *     AcademicEvent:
+ *       type: object
+ *       required: [id, title, date, location, type, capacity]
+ *       properties:
+ *         id: { type: integer, example: 1 }
+ *         title: { type: string, example: Seminario de innovación tecnológica }
+ *         date: { type: string, format: date, example: '2026-10-15' }
+ *         location: { type: string, example: Auditorio UCEVA }
+ *         type: { type: string, example: Seminario }
+ *         capacity: { type: integer, example: 120 }
+ */
 export {};

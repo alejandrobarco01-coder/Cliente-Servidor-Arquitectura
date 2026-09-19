@@ -68,6 +68,7 @@ export class Server {
 
     //* Swagger Docs
     this.app.use("/api/docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+    this.app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
     //* SPA
     this.app.use((req, res) => {
