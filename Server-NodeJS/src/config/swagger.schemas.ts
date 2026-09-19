@@ -71,4 +71,19 @@
  *           type: number
  *           example: 4500
  */
+/**
+ * @openapi
+ * components:
+ *   schemas:
+ *     Course:
+ *       type: object
+ *       required: [id, name, code, credits, semester, area]
+ *       properties:
+ *         id: { type: integer, example: 1 }
+ *         name: { type: string, example: Arquitectura de Software }
+ *         code: { type: string, example: ASI-401 }
+ *         credits: { type: integer, example: 3 }
+ *         semester: { type: integer, example: 7 }
+ *         area: { type: string, example: Ingeniería de software }
+ */
 export {};
