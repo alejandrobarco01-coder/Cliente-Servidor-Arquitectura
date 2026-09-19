@@ -102,4 +102,19 @@
  *         semester: { type: integer, example: 7 }
  *         area: { type: string, example: Ingeniería de software }
  */
+/**
+ * @openapi
+ * components:
+ *   schemas:
+ *     AcademicEvent:
+ *       type: object
+ *       required: [id, title, date, location, type, capacity]
+ *       properties:
+ *         id: { type: integer, example: 1 }
+ *         title: { type: string, example: Seminario de innovación tecnológica }
+ *         date: { type: string, format: date, example: '2026-10-15' }
+ *         location: { type: string, example: Auditorio UCEVA }
+ *         type: { type: string, example: Seminario }
+ *         capacity: { type: integer, example: 120 }
+ */
 export {};
