@@ -1,0 +1,8 @@
+<table class="table table-striped border">
+  <thead><tr><th>Id</th><th>Nombre</th><th>Apellido</th><th>Correo</th><th>Departamento</th><th>Especialidad</th></tr></thead>
+  <tbody>
+    @for (teacher of teachers; track teacher.id) {
+      <tr><th scope="row">{{ teacher.id }}</th><td>{{ teacher.name }}</td><td>{{ teacher.lastName }}</td><td>{{ teacher.email }}</td><td>{{ teacher.department }}</td><td>{{ teacher.specialty }}</td></tr>
+    }
+  </tbody>
+</table>
