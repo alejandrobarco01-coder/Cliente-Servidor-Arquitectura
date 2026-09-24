@@ -1,0 +1,5 @@
+@switch (state) {
+  @case ('loading') { <app-alert alertState="loading" text="Cargando Eventos..."></app-alert> }
+  @case ('error') { <app-alert alertState="error" text="Error al cargar los Eventos"></app-alert> }
+  @case ('success') { <app-events-table [events]="events"></app-events-table> }
+}

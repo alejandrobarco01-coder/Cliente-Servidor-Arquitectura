@@ -1,0 +1,8 @@
+<table class="table table-striped border">
+  <thead><tr><th>Id</th><th>Evento</th><th>Fecha</th><th>Lugar</th><th>Tipo</th><th>Cupo</th></tr></thead>
+  <tbody>
+    @for (event of events; track event.id) {
+      <tr><th scope="row">{{ event.id }}</th><td>{{ event.title }}</td><td>{{ event.date }}</td><td>{{ event.location }}</td><td>{{ event.type }}</td><td>{{ event.capacity }}</td></tr>
+    }
+  </tbody>
+</table>

@@ -1,0 +1,8 @@
+<table class="table table-striped border">
+  <thead><tr><th>Id</th><th>Curso</th><th>Código</th><th>Créditos</th><th>Semestre</th><th>Área</th></tr></thead>
+  <tbody>
+    @for (course of courses; track course.id) {
+      <tr><th scope="row">{{ course.id }}</th><td>{{ course.name }}</td><td>{{ course.code }}</td><td>{{ course.credits }}</td><td>{{ course.semester }}</td><td>{{ course.area }}</td></tr>
+    }
+  </tbody>
+</table>
